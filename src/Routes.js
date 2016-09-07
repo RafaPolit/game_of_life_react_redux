@@ -6,6 +6,7 @@ import store from './lib/store';
 const history = syncHistoryWithStore(hashHistory, store);
 import IndexPage from 'pages/IndexPage';
 import TodoApp from 'components/TodoApp';
+import GameOfLife from 'components/GameOfLife';
 
 export default class Routes extends Component {
   render() {
@@ -13,6 +14,7 @@ export default class Routes extends Component {
       <Router history={history}>
         <Route path="/" component={IndexPage} />
         <Route path="todo" component={TodoApp} />
+        <Route path="gameOfLife" component={GameOfLife} />
       </Router>
     );
   }

@@ -6,7 +6,8 @@ export default class IndexPage extends Component {
     return (
       <div>
         <h1>Hello, world!</h1>
-        <Link to="/todo">Go to TodoList</Link>
+        <Link to="/todo">Go to TodoList</Link><br />
+        <Link to="/gameOfLife">Game of Life</Link>
       </div>
     );
   }
